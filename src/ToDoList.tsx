@@ -15,7 +15,7 @@ export type TaskType = {
 
 }
 
-function ToDoList(props: TodoListPropsType) {
+const ToDoList = (props: TodoListPropsType) => {
 
 
     return (
