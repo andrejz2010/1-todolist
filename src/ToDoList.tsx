@@ -1,6 +1,4 @@
 import React from 'react';
-import {isNumber} from "util";
-import * as string_decoder from "string_decoder";
 import {FilterValueType} from "./App";
 
 type TodoListPropsType = {
@@ -16,7 +14,10 @@ export type TaskType = {
 
 
 }
-const ToDoList = (props: TodoListPropsType) => {
+
+function ToDoList(props: TodoListPropsType) {
+
+
     return (
         <div>
             <h3>{props.title}</h3>
@@ -54,6 +55,6 @@ const ToDoList = (props: TodoListPropsType) => {
             </div>
         </div>
     );
-};
+}
 
 export default ToDoList;
